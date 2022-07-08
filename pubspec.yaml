@@ -1,0 +1,19 @@
+name: usefull_extensions
+description: A set of usefull extensions for Flutter and Dart
+version: 0.0.1
+
+homepage: https://github.com/cgutierr-zgz/usefull_extensions
+repository: https://github.com/cgutierr-zgz/usefull_extensions
+issue_tracker: https://github.com/cgutierr-zgz/usefull_extensions/issues
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^3.0.1

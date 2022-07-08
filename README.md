@@ -1,11 +1,6 @@
-# usefull_extensions
+# Usefull Extensions 🔌
 
-
-<p align="center">
-  <img alt="banner" src="https://picsum.photos/200/300" />
-</p>	
-
-<p align="center">
+<p align="left">
   <a href="https://pub.dev/packages/usefull_extensions">
      <img alt="pub" src="https://img.shields.io/pub/v/usefull_extensions.svg?label=usefull_extensions">
   </a>
