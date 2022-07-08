@@ -11,7 +11,7 @@
      <img alt="license" src="https://img.shields.io/badge/license-BSD 3-green.svg">
   </a>
   <a href="#">
-     <img alt="coverage" src="https://github.com/cgutierr-zgz/usefull_extensions/blob/master/coverage_badge.svg">
+     <img alt="coverage" src="https://raw.githubusercontent.com/cgutierr-zgz/usefull_extensions/master/coverage_badge.svg">
   </a>
 </p>
 
