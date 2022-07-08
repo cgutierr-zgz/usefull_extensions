@@ -120,14 +120,10 @@ extension UnwrappedString on Object? {
   /// model.unwrappedString('?') // '?'
   /// ```
   String unwrappedString([String replacement = '-']) {
-    if (this is String?) {
-      if (this == null) {
-        return replacement;
-      } else {
-        return (this as String?)!.isEmpty ? replacement : toString();
-      }
+    if (this == null) {
+      return replacement;
     } else {
-      return this?.toString() ?? replacement;
+      return (this as String?)!.isEmpty ? replacement : toString();
     }
   }
 }
