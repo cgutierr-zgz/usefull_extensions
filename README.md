@@ -38,6 +38,7 @@ import 'package:usefull_extensions/usefull_extensions.dart';
 ---
 
 ## TODO for v1
+- [ ] Add tests
 - [ ] Add examples in README
 - [ ] Add examples in example file
 - [ ] Add pipelines for checking, pana, and publishing
