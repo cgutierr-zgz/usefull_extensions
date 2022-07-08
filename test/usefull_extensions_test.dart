@@ -133,7 +133,6 @@ void main() {
 
       model = true;
       expect(model, true);
-      // TODO(carlos): !(String?)
     });
   });
 

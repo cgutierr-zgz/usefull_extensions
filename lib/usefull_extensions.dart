@@ -119,13 +119,11 @@ extension UnwrappedString on Object? {
   /// model.unwrappedString() // '-'
   /// model.unwrappedString('?') // '?'
   /// ```
-  String unwrappedString([String replacement = '-']) {
-    if (this == null) {
-      return replacement;
-    } else {
-      return (this as String?)!.isEmpty ? replacement : toString();
-    }
-  }
+  String unwrappedString([String replacement = '-']) => this == null
+      ? replacement
+      : (this as String?)!.isEmpty
+          ? replacement
+          : toString();
 }
 
 /// {@template map_extension}
@@ -137,7 +135,7 @@ extension DetailedWhere<K, V> on Map<K, V> {
   ///
   /// Example:
   /// ```dart
-  /// people.where((key, value) => key.length > 4 && value > 20);
+  /// people.where((key, value) => key.length > 4 && value >= 20);
   /// // {Peter: 22}
   ///
   /// const Map<String, int> people = {'John': 20, 'Mary': 21, 'Peter':20};
@@ -407,7 +405,7 @@ class HorizontalSpacerWithText extends StatelessWidget {
     super.key,
     required this.text,
     this.textStyle,
-    required this.color,
+    this.color,
     this.height = 36,
     this.thickness = 1.0,
   });
@@ -419,7 +417,7 @@ class HorizontalSpacerWithText extends StatelessWidget {
   final TextStyle? textStyle;
 
   /// Color of the separation in between widgets
-  final Color color;
+  final Color? color;
 
   /// Height of the divider
   final double? height;
