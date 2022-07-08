@@ -119,17 +119,11 @@ extension UnwrappedString on Object? {
   /// model.unwrappedString() // '-'
   /// model.unwrappedString('?') // '?'
   /// ```
-  String unwrappedString([String replacement = '-']) {
-    if (this is String?) {
-      if (this == null) {
-        return replacement;
-      } else {
-        return (this as String?)!.isEmpty ? replacement : toString();
-      }
-    } else {
-      return this?.toString() ?? replacement;
-    }
-  }
+  String unwrappedString([String replacement = '-']) => this == null
+      ? replacement
+      : (this as String?)!.isEmpty
+          ? replacement
+          : toString();
 }
 
 /// {@template map_extension}
@@ -141,7 +135,7 @@ extension DetailedWhere<K, V> on Map<K, V> {
   ///
   /// Example:
   /// ```dart
-  /// people.where((key, value) => key.length > 4 && value > 20);
+  /// people.where((key, value) => key.length > 4 && value >= 20);
   /// // {Peter: 22}
   ///
   /// const Map<String, int> people = {'John': 20, 'Mary': 21, 'Peter':20};
@@ -259,7 +253,7 @@ abstract class Dimens {
 ///
 ///  * [Dimens]
 ///  * [HorizontalSpacer]
-///  * [HorizontalSpacerWithText]
+///  * [VerticalSpacerWithText]
 class VerticalSpacer extends SizedBox {
   /// [VerticalSpacer] with custom paddings
   const VerticalSpacer({super.key, required double super.height});
@@ -319,23 +313,23 @@ class VerticalSpacer extends SizedBox {
 ///
 /// Example:
 /// ```dart
-///    HorizontalSpacer.small()
-///    HorizontalSpacer.normal()
-///    HorizontalSpacer.semi()
-///    HorizontalSpacer.mediumSmall()
-///    HorizontalSpacer.medium()
-///    HorizontalSpacer.medium20()
-///    HorizontalSpacer.mediumLarge()
-///    HorizontalSpacer.large()
-///    HorizontalSpacer.xLarge()
-///    HorizontalSpacer.xxLarge()
+///    HorizontalSpacer.small(),
+///    HorizontalSpacer.normal(),
+///    HorizontalSpacer.semi(),
+///    HorizontalSpacer.mediumSmall(),
+///    HorizontalSpacer.medium(),
+///    HorizontalSpacer.medium20(),
+///    HorizontalSpacer.mediumLarge(),
+///    HorizontalSpacer.large(),
+///    HorizontalSpacer.xLarge(),
+///    HorizontalSpacer.xxLarge(),
 /// ```
 ///
 /// See also:
 ///
 ///  * [Dimens]
 ///  * [VerticalSpacer]
-///  * [HorizontalSpacerWithText]
+///  * [VerticalSpacerWithText]
 class HorizontalSpacer extends SizedBox {
   /// [HorizontalSpacer] with custom paddings
   const HorizontalSpacer({super.key, required double super.width});
@@ -389,12 +383,12 @@ class HorizontalSpacer extends SizedBox {
       const HorizontalSpacer(width: Dimens.paddingXXXLarge);
 }
 
-/// [HorizontalSpacerWithText] creates a horizontal separation between Widgets
+/// [VerticalSpacerWithText] creates a horizontal separation between Widgets
 /// with a text in between
 ///
 /// Example:
 /// ```dart
-///    HorizontalSpacerWithText(
+///    VerticalSpacerWithText(
 ///      text: 'example text',
 ///      color: Colors.green,
 ///    );
@@ -404,14 +398,14 @@ class HorizontalSpacer extends SizedBox {
 ///
 ///  * [Dimens]
 ///  * [VerticalSpacer]
-///  * [HorizontalSpacerWithText]
-class HorizontalSpacerWithText extends StatelessWidget {
+///  * [VerticalSpacerWithText]
+class VerticalSpacerWithText extends StatelessWidget {
   /// [HorizontalSpacer] with custom attributes
-  const HorizontalSpacerWithText({
+  const VerticalSpacerWithText({
     super.key,
     required this.text,
     this.textStyle,
-    required this.color,
+    this.color,
     this.height = 36,
     this.thickness = 1.0,
   });
@@ -423,7 +417,7 @@ class HorizontalSpacerWithText extends StatelessWidget {
   final TextStyle? textStyle;
 
   /// Color of the separation in between widgets
-  final Color color;
+  final Color? color;
 
   /// Height of the divider
   final double? height;
