@@ -37,8 +37,127 @@ import 'package:usefull_extensions/usefull_extensions.dart';
 
 ---
 
+## Extensions
+
+`usefull_extensions` offers different extensions, for Objects, Widgets, Strings, etc...
+
+#### Joined Widgets
+
+This extension allows us to add a separator between each element of a List<Widget>
+Usage: `joinWithSeparator`
+
+```dart
+[
+ const Text('CARLOS'),
+ const Text('MOBILE SOLUTIONS'),
+].joinWithSeparator(); // You can also specify your own separator Widget
+//.joinWithSeparator(const SizedBox(height: 10));
+```
+
+#### Spaced Widgets
+
+This extension allows us to add a padding to a whole List<Widget>, by default excludes flex Widgets, such as `Expanded`, `Spacer` or `Flexible`
+Usage: `spaced`
+
+```dart
+[
+  const Text('CARLOS'),
+  const Text('MOBILE SOLUTIONS'),
+].spaced(); // You can also specify your own EdgeInsetsGeometry
+//.spaced(padding: const EdgeInsets.all(10));
+```
+
+### Log on Object
+
+This extensions emits a log event of the current object, and returns the length of the output log
+Usage: `log`
+
+```dart
+final testString = 'My String';
+testString.log();
+// Outputs -> 'My String' as a log event
+```
+
+### Unwrapped String on Object?
+
+This extension allows us to safely unwrap a string, returning `-` by default if it's null
+Usage: `unwrappedString`
+
+```dart
+null.unwrappedString(); // '-'
+null.unwrappedString('🍰'); // '🍰'
+'My test'.unwrappedString('?'); // My test
+```
+
+### Detailed Where on Map<K, V>
+
+This set of extensions allows us to find an entry based on key, value, or both
+Usage: `where`, `whereKey` and `whereValue`
+
+```dart
+<String, int>{'John': 20, 'Mary': 21, 'Peter': 20}
+
+..where((key, value) => key.length > 4 && value >= 20) // {Peter: 22}
+
+..whereKey((key) => key.length < 5) // {John: 20, Mary: 21}
+
+..whereValue((value) => value.isEven); // {John: 20, Peter: 22}
+```
+
+### Capitalization on String
+
+This extensions allows us to safely capitalize or title-case a String
+Usage: `toCapitalized` and `toTitleCase`
+
+```dart
+'carlos g'.toCapitalized(); // Carlos g
+'carlos g'.toTitleCase(); // Carlos G
+```
+
+## Widgets
+
+`usefull_extensions` offers different Widgets
+
+#### Spacer Widgets
+
+A list of spacers, both vertically and horizontally
+Usage: `VerticalSpacer`, `HorizontalSpacer` and `VerticalSpacerWithText`
+
+```dart
+[
+	// Vertical
+    VerticalSpacer.xSmall(),
+    VerticalSpacer.small(),
+    VerticalSpacer.normal(),
+    VerticalSpacer.semi(),
+    VerticalSpacer.mediumSmall(),
+    VerticalSpacer.medium(),
+    VerticalSpacer.medium20(),
+    VerticalSpacer.mediumLarge(),
+    VerticalSpacer.large(),
+    VerticalSpacer.xLarge(),
+    VerticalSpacer.xxLarge(),
+    VerticalSpacer.xxxLarge(),
+    
+	// Horizontal
+    HorizontalSpacer.small(),
+    HorizontalSpacer.normal(),
+    HorizontalSpacer.semi(),
+    HorizontalSpacer.mediumSmall(),
+    HorizontalSpacer.medium(),
+    HorizontalSpacer.medium20(),
+    HorizontalSpacer.mediumLarge(),
+    HorizontalSpacer.large(),
+    HorizontalSpacer.xLarge(),
+    HorizontalSpacer.xxLarge(),
+    
+	// Vertical with text
+    VerticalSpacerWithText(text: 'example text'),
+]
+```
+
 ## TODO for v1
 - [x] Add tests
-- [ ] Add examples in README
-- [ ] Add examples in example folder
+- [x] Add examples in README
+- [x] Add examples in example folder
 - [ ] Add pipelines for checking, pana, and publishing

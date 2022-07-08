@@ -44,19 +44,19 @@ class _SeparatedColumn extends StatelessWidget {
       child: Column(
         children: [
           _SeparatedRow(),
-          const HorizontalSpacerWithText(text: 'V-Spacer with text'),
+          const VerticalSpacerWithText(text: 'V-Spacer with text'),
           _SeparatedRow(),
           /* Converts to - */
-          HorizontalSpacerWithText(text: null.unwrappedString()),
+          VerticalSpacerWithText(text: null.unwrappedString()),
           _SeparatedRow(),
           /* Converts to ? */
-          HorizontalSpacerWithText(text: null.unwrappedString('?')),
+          VerticalSpacerWithText(text: null.unwrappedString('?')),
           _SeparatedRow(),
           /* Converts to Carlos g */
-          HorizontalSpacerWithText(text: 'carlos g'.toCapitalized()),
+          VerticalSpacerWithText(text: 'carlos g'.toCapitalized()),
           _SeparatedRow(),
           /* Converts to Carlos G */
-          HorizontalSpacerWithText(text: 'carlos g'.toTitleCase()),
+          VerticalSpacerWithText(text: 'carlos g'.toTitleCase()),
           _SeparatedRow(),
         ]
             /* Separates Vertically */

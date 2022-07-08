@@ -253,7 +253,7 @@ abstract class Dimens {
 ///
 ///  * [Dimens]
 ///  * [HorizontalSpacer]
-///  * [HorizontalSpacerWithText]
+///  * [VerticalSpacerWithText]
 class VerticalSpacer extends SizedBox {
   /// [VerticalSpacer] with custom paddings
   const VerticalSpacer({super.key, required double super.height});
@@ -313,23 +313,23 @@ class VerticalSpacer extends SizedBox {
 ///
 /// Example:
 /// ```dart
-///    HorizontalSpacer.small()
-///    HorizontalSpacer.normal()
-///    HorizontalSpacer.semi()
-///    HorizontalSpacer.mediumSmall()
-///    HorizontalSpacer.medium()
-///    HorizontalSpacer.medium20()
-///    HorizontalSpacer.mediumLarge()
-///    HorizontalSpacer.large()
-///    HorizontalSpacer.xLarge()
-///    HorizontalSpacer.xxLarge()
+///    HorizontalSpacer.small(),
+///    HorizontalSpacer.normal(),
+///    HorizontalSpacer.semi(),
+///    HorizontalSpacer.mediumSmall(),
+///    HorizontalSpacer.medium(),
+///    HorizontalSpacer.medium20(),
+///    HorizontalSpacer.mediumLarge(),
+///    HorizontalSpacer.large(),
+///    HorizontalSpacer.xLarge(),
+///    HorizontalSpacer.xxLarge(),
 /// ```
 ///
 /// See also:
 ///
 ///  * [Dimens]
 ///  * [VerticalSpacer]
-///  * [HorizontalSpacerWithText]
+///  * [VerticalSpacerWithText]
 class HorizontalSpacer extends SizedBox {
   /// [HorizontalSpacer] with custom paddings
   const HorizontalSpacer({super.key, required double super.width});
@@ -383,12 +383,12 @@ class HorizontalSpacer extends SizedBox {
       const HorizontalSpacer(width: Dimens.paddingXXXLarge);
 }
 
-/// [HorizontalSpacerWithText] creates a horizontal separation between Widgets
+/// [VerticalSpacerWithText] creates a horizontal separation between Widgets
 /// with a text in between
 ///
 /// Example:
 /// ```dart
-///    HorizontalSpacerWithText(
+///    VerticalSpacerWithText(
 ///      text: 'example text',
 ///      color: Colors.green,
 ///    );
@@ -398,10 +398,10 @@ class HorizontalSpacer extends SizedBox {
 ///
 ///  * [Dimens]
 ///  * [VerticalSpacer]
-///  * [HorizontalSpacerWithText]
-class HorizontalSpacerWithText extends StatelessWidget {
+///  * [VerticalSpacerWithText]
+class VerticalSpacerWithText extends StatelessWidget {
   /// [HorizontalSpacer] with custom attributes
-  const HorizontalSpacerWithText({
+  const VerticalSpacerWithText({
     super.key,
     required this.text,
     this.textStyle,

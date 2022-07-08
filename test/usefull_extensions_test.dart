@@ -232,12 +232,12 @@ void main() {
         FlutterError.onError = ignoreOverflowErrors;
         const hText = 'Horizontal spacer text!';
         await tester.pumpApp(
-          const HorizontalSpacerWithText(
+          const VerticalSpacerWithText(
             text: hText,
             color: Colors.red,
           ),
         );
-        expect(find.byType(HorizontalSpacerWithText), findsNWidgets(1));
+        expect(find.byType(VerticalSpacerWithText), findsNWidgets(1));
         expect(find.text(hText), findsOneWidget);
       },
     );
