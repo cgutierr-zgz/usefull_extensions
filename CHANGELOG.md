@@ -1,4 +1,13 @@
-# [1.0.0](https://github.com/cgutierr-zgz/usefull_extensions/commit/33844136a4d66310ed0bf8d295bb7f9979f4cfbd) (08-07-2022)
+# [1.0.1](https://github.com/cgutierr-zgz/usefull_extensions/commit/c18ce96eb3a868a50edfc17484142fcb2fecc771) (08-07-2022)
+
+### FIX
+
+- Updated README.md broken image on pub.dev ([#7](https://github.com/cgutierr-zgz/usefull_extensions/issues/7)) ([d53d913](https://github.com/cgutierr-zgz/usefull_extensions/commit/d53d9132317b57a187d7412e4a180c559adf5f65))
+
+<details >
+<summary>Previous versions</summary>
+
+## [1.0.0](https://github.com/cgutierr-zgz/usefull_extensions/commit/1c7f5d8fc591ee1ef1220ee78d3473fcc55f31e2) (08-07-2022)
 
 ### Features
 
@@ -7,8 +16,6 @@
 - Added 100% test coverage ([#3](https://github.com/cgutierr-zgz/usefull_extensions/issues/3)) ([67ce874](https://github.com/cgutierr-zgz/usefull_extensions/commit/67ce8741cc20042887bfb2345b1b1ddf20cf87a5))
 - Added CI/CD pipelines ([#4](https://github.com/cgutierr-zgz/usefull_extensions/issues/4)) ([a0accdc](https://github.com/cgutierr-zgz/usefull_extensions/commit/a0accdcd4bc1764b386ac61c803a272f7bcc6ffc))
 
-<details >
-<summary>Previous versions</summary>
 
 ## [0.0.1](https://github.com/cgutierr-zgz/usefull_extensions/commit/33844136a4d66310ed0bf8d295bb7f9979f4cfbd) (08-07-2022)
 
