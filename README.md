@@ -155,9 +155,3 @@ Usage: `VerticalSpacer`, `HorizontalSpacer` and `VerticalSpacerWithText`
     VerticalSpacerWithText(text: 'example text'),
 ]
 ```
-
-## TODO for v1
-- [x] Add tests
-- [x] Add examples in README
-- [x] Add examples in example folder
-- [ ] Add pipelines for checking, pana, and publishing
