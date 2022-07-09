@@ -1,4 +1,4 @@
-## [1.0.2](https://github.com/cgutierr-zgz/usefull_extensions/commit/c18ce96eb3a868a50edfc17484142fcb2fecc771) (08-07-2022)
+## [1.0.2](https://github.com/cgutierr-zgz/usefull_extensions/commit/8da5654285c24b9923ade4443a00981d5a806a89) (09-07-2022)
 
 ### FIX
 
