@@ -1,4 +1,4 @@
-# [1.0.1](https://github.com/cgutierr-zgz/usefull_extensions/commit/c18ce96eb3a868a50edfc17484142fcb2fecc771) (08-07-2022)
+## [1.0.2](https://github.com/cgutierr-zgz/usefull_extensions/commit/c18ce96eb3a868a50edfc17484142fcb2fecc771) (08-07-2022)
 
 ### FIX
 
@@ -6,6 +6,12 @@
 
 <details >
 <summary>Previous versions</summary>
+
+## [1.0.1](https://github.com/cgutierr-zgz/usefull_extensions/commit/c18ce96eb3a868a50edfc17484142fcb2fecc771) (08-07-2022)
+
+### FIX
+
+- Updated README.md broken image on pub.dev ([#7](ht
 
 ## [1.0.0](https://github.com/cgutierr-zgz/usefull_extensions/commit/1c7f5d8fc591ee1ef1220ee78d3473fcc55f31e2) (08-07-2022)
 
