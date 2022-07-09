@@ -2,7 +2,8 @@
 
 ### FIX
 
-- Updated README.md broken image on pub.dev ([#7](https://github.com/cgutierr-zgz/usefull_extensions/issues/7)) ([d53d913](https://github.com/cgutierr-zgz/usefull_extensions/commit/d53d9132317b57a187d7412e4a180c559adf5f65))
+- Updated README.md broken image on pub.dev ([#7](https://github.com/cgutierr-zgz/usefull_extensions/issues/7)) ([0bcdf4b](https://github.com/cgutierr-zgz/usefull_extensions/commit/0bcdf4b7b2df9311f5f7e949342498558a1be115))
+- TODO: Fix pipelines
 
 <details >
 <summary>Previous versions</summary>
