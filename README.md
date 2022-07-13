@@ -142,6 +142,15 @@ Usage: `VerticalSpacer`, `HorizontalSpacer` and `VerticalSpacerWithText`
 ]
 ```
 
+### ThemeData on BuildContext
+
+This extensions allows us to access a themedata based on the current context
+
+```dart
+final theme = context.theme; // Current ThemeData
+```
+
+
 [pub_badge]: https://img.shields.io/pub/v/usefull_extensions.svg?label=usefull_extensions
 [pub_link]: https://pub.dev/packages/usefull_extensions
 
