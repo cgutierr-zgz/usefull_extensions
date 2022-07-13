@@ -1,12 +1,17 @@
+# [1.0.3](https://github.com/cgutierr-zgz/usefull_extensions/commit/e298b547d8aceb7478c9373b34e11f26e8dfee61) (13-07-2022)
+
+### Features
+
+- Added theme of context extension. Usage: `context.theme`
+
+<details >
+<summary>Previous versions</summary>
+
 ## [1.0.2](https://github.com/cgutierr-zgz/usefull_extensions/commit/8da5654285c24b9923ade4443a00981d5a806a89) (09-07-2022)
 
 ### FIX
 
 - Updated README.md broken image on pub.dev ([#7](https://github.com/cgutierr-zgz/usefull_extensions/issues/7)) ([0bcdf4b](https://github.com/cgutierr-zgz/usefull_extensions/commit/0bcdf4b7b2df9311f5f7e949342498558a1be115))
-- TODO: Fix pipelines
-
-<details >
-<summary>Previous versions</summary>
 
 ## [1.0.1](https://github.com/cgutierr-zgz/usefull_extensions/commit/c18ce96eb3a868a50edfc17484142fcb2fecc771) (08-07-2022)
 
